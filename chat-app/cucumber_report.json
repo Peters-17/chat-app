@@ -1,0 +1,705 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-signup;sign-up-user-with-username-\"admin\"",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Sign up user with username \"admin\"",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1319918999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the signup page",
+            "match": {
+              "location": "features\\step_definitions\\user_signup_steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53007500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I sign up with username \"admin\" and password \"admin123\"",
+            "match": {
+              "location": "features\\step_definitions\\user_signup_steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 257642700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should see a signup confirmation or user already exists alert",
+            "match": {
+              "location": "features\\step_definitions\\user_signup_steps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 210822599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 80613700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 58088000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-signup;sign-up-user-with-username-\"admin2\"",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Sign up user with username \"admin2\"",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1384868000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am on the signup page",
+            "match": {
+              "location": "features\\step_definitions\\user_signup_steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42997800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I sign up with username \"admin2\" and password \"admin123\"",
+            "match": {
+              "location": "features\\step_definitions\\user_signup_steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 296515999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see a signup confirmation or user already exists alert",
+            "match": {
+              "location": "features\\step_definitions\\user_signup_steps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 218629000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 83867999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 80362700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-signup",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "User Signup",
+    "tags": [],
+    "uri": "features\\01_user_signup_steps.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-login;successful-login-with-correct-credentials",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Successful login with correct credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1253473900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the login page",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36108699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I enter a valid username and password",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 141260899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I click the login button",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46287599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see the chat room interface",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 255935100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 61416600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 68263500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-login;unsuccessful-login-with-incorrect-credentials",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Unsuccessful login with incorrect credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1410494100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I am on the login page",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48200899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I enter an invalid username or password",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 154934500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I click the login button",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35714600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see an error message",
+            "match": {
+              "location": "features\\step_definitions\\login_steps.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 217442200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 56394999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 54831599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "User Login",
+    "tags": [],
+    "uri": "features\\02_login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "message-sending-and-history;sending-a-message",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Sending a message",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1446277899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am logged in as a user",
+            "match": {
+              "location": "features\\step_definitions\\message_steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 437718800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "a chat room exists named \"TestRoom\"",
+            "match": {
+              "location": "features\\step_definitions\\message_steps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 313497800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I join a chat room",
+            "match": {
+              "location": "features\\step_definitions\\message_steps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43578899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I type a message into the message box",
+            "match": {
+              "location": "features\\step_definitions\\message_steps.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39409899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click the send button",
+            "match": {
+              "location": "features\\step_definitions\\message_steps.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27711500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should see my message in the chat window",
+            "match": {
+              "location": "features\\step_definitions\\message_steps.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18586800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 50235099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 51399399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "message-sending-and-history",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Message Sending and History",
+    "tags": [],
+    "uri": "features\\03_message.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "multi-user-chat-synchronization;multiple-users-see-each-other's-messages",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Multiple users see each other's messages",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1344492499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User A is logged in as \"userA\" with password \"passwordA\"",
+            "match": {
+              "location": "features\\step_definitions\\multi_user_steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 429639299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "User B is logged in as \"userB\" with password \"passwordB\"",
+            "match": {
+              "location": "features\\step_definitions\\multi_user_steps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 367507600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User A joins the chat room \"general\"",
+            "match": {
+              "location": "features\\step_definitions\\multi_user_steps.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 298978399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User B joins the chat room \"general\"",
+            "match": {
+              "location": "features\\step_definitions\\multi_user_steps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60424800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User A sends a message \"Hello from User A!\"",
+            "match": {
+              "location": "features\\step_definitions\\multi_user_steps.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67920199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "User B should see \"Hello from User A!\" in the chat window",
+            "match": {
+              "location": "features\\step_definitions\\multi_user_steps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22505300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User A should see \"Hello from User A!\" in the chat window",
+            "match": {
+              "location": "features\\step_definitions\\multi_user_steps.js:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14156700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 48036200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 51335599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "multi-user-chat-synchronization",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Multi-User Chat Synchronization",
+    "tags": [],
+    "uri": "features\\04_multi_user.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "room-creation-uniqueness;prevent-duplicate-room-creation",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Prevent duplicate room creation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1344797599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Room Uniqueness test User A is logged in as \"userA\" with password \"passwordA\"",
+            "match": {
+              "location": "features\\step_definitions\\unique_room_steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 408954799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "Room Uniqueness test User A creates a chat room named \"UniqueRoom\"",
+            "match": {
+              "location": "features\\step_definitions\\unique_room_steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 128953899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Room Uniqueness test User A attempts to create another chat room named \"UniqueRoom\"",
+            "match": {
+              "location": "features\\step_definitions\\unique_room_steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 82609299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "there should be only one chat room named \"UniqueRoom\"",
+            "match": {
+              "location": "features\\step_definitions\\unique_room_steps.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8837299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 54964400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 59383000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "room-creation-uniqueness",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Room Creation Uniqueness",
+    "tags": [],
+    "uri": "features\\05_unique_room.feature"
+  }
+]

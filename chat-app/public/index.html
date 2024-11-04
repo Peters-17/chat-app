@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Chat App</title>
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js"
+    integrity="sha512-PU5S6BA03fRv1Q5fpwXjg5nlRrgdoguZ74urFInkbABMCENyx5oP3hrDzYMMPh3qdLdknIvrGj3yqZ4JuU7Nag=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+</head>
+<body>
+  <body class="auth_page">
+    <div class="auth_container">
+      <h2>Sign Up</h2>
+      <input type="text" id="signupUsername" placeholder="Username" />
+      <input type="password" id="signupPassword" placeholder="Password" />
+      <button onclick="signup()">Sign Up</button>
+      
+      <h2>Login</h2>
+      <input type="text" id="loginUsername" placeholder="Username" />
+      <input type="password" id="loginPassword" placeholder="Password" />
+      <button onclick="login()">Login</button>
+    </div>
+  </body>
+
+  <!-- Main Chat Application Layout (hidden until login) -->
+  <div class="app" style="display: none;">
+    <div class="chat_app">
+      <!-- Left Sidebar: User List and Logout Button -->
+      <div id="sidebar" class="left_sidebar">
+        <div class="logo_text">
+          <span>Chat <span class="colored">App</span></span>
+        </div>
+        <span class="user_label">Users</span>
+        <div id="active_users_list" class="active_users_list"></div>
+        <div class="logout_container">
+          <button id="logoutButton" onclick="logout()">Logout</button>
+        </div>
+      </div>
+
+      <!-- Center Chat Area -->
+      <div class="chat_area">
+        <div class="chat_bg">
+          <div id="chat" class="chat"></div>
+          <div class="chat_input">
+            <input type="text" id="messageInput" placeholder="Enter message" />
+            <button id="send_message_btn" class="send_message_btn">SEND</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Sidebar: Room List and Room Creation -->
+      <div class="right_sidebar">
+        <span class="room_label">Rooms</span>
+        <div id="active_rooms_list" class="active_rooms_list"></div>
+        <div class="room_input">
+          <input type="text" id="roomInput" placeholder="Create room" />
+          <button id="room_add_icon_holder" class="room_add_icon_holder">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    // User signup function
+    function signup() {
+      const username = document.getElementById("signupUsername").value;
+      const password = document.getElementById("signupPassword").value;
+      fetch("/signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username, password }),
+      })
+        .then(response => response.json())
+        .then(data => alert(data.message))
+        .catch(error => console.error("Error:", error));
+    }
+  
+    // User login function
+    function login() {
+      const username = document.getElementById("loginUsername").value;
+      const password = document.getElementById("loginPassword").value;
+      fetch("/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username, password }),
+      })
+        .then(response => response.json())
+        .then(data => {
+          alert(data.message);
+          if (data.message === "Logged in successfully") {
+            document.querySelector(".auth_container").style.display = "none";
+            document.querySelector(".app").style.display = "block";
+            myUsername = username;  // Store logged-in username
+            socket.emit("createUser", myUsername); // Notify server of new user
+          }
+        })
+        .catch(error => console.error("Error:", error));
+    }
+
+    // User logout function
+    function logout() {
+      fetch("/logout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+      })
+        .then(response => response.json())
+        .then(data => {
+          alert(data.message);
+          if (data.message === "Logged out successfully") {
+            document.querySelector(".auth_container").style.display = "block";
+            document.querySelector(".app").style.display = "none";
+            
+            // Clear chat messages after logout
+            chatDisplay.innerHTML = "";
+          }
+        })
+        .catch(error => console.error("Error:", error));
+    }
+  </script>
+  
+</body>
+</html>

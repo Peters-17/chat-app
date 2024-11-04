@@ -1,0 +1,12 @@
+.\venv\Scripts\activate
+
+python manage.py shell
+
+
+https://github.com/kaushikk18/chatapp-django
+
+https://github.com/rajmasha/multi-room-chat-app?tab=readme-ov-file
+
+
+
+

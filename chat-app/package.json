@@ -1,0 +1,29 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "Chat Web Application built with NodeJS and socket.io",
+  "main": "server.js",
+  "scripts": {
+    "test": "cucumber-js --format json:cucumber_report.json && node generateReport.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "chat-app",
+    "nodejs",
+    "websockets",
+    "socket.io"
+  ],
+  "author": "Raj Asha",
+  "license": "MIT",
+  "dependencies": {
+    "@cucumber/cucumber": "^11.0.1",
+    "bcrypt": "^5.1.1",
+    "chai": "^5.1.2",
+    "cucumber-html-reporter": "^7.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.18.1",
+    "mongoose": "^8.7.3",
+    "selenium-webdriver": "^4.25.0",
+    "socket.io": "^4.1.3"
+  }
+}
