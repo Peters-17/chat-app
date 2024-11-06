@@ -46,7 +46,7 @@ source venv/bin/activate
 
 1. **Clone the repository**:
    ```bash
-   unzip the zip file I emailed
+   git clone https://github.com/Peters-17/chat-app.git
    cd chat-App
    ```
    use .\venv\Scripts\activate or source venv/bin/activate to load running environment.
